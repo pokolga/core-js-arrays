@@ -317,7 +317,7 @@ function selectMany(/* arr, childrenSelector */) {
  */
 function calculateBalance(arr) {
   const balance = arr.flat();
-  return balance.reduce(function (acc, elem, i) {
+  return balance.reduce(function fur(acc, elem, i) {
     let accum = acc;
     accum += i % 2 === 0 ? elem : -elem;
     return accum;
